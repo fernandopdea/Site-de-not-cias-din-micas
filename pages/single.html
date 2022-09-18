@@ -1,0 +1,64 @@
+<%- include('partials/header.html') %>
+
+
+    <section class="noticia">
+        <div class="center">
+            <div class="noticia-single">
+                <h2>
+                    <%= noticia.titulo %>
+                </h2>
+                <div class="autor-nome">
+                    <span>
+                        <%= noticia.autor %>
+                    </span>
+                </div>
+                <br>
+                <div><img style="max-width: 100%;" src="<%= noticia.imagem %>"></div>
+                <br>
+                <%- noticia.conteudo %>
+                    <div class="texto-mais-lida-single">
+                        <a class="texto-mais-lidas-sigle" href="<%= noticia.link %>">Vá
+                            para o site</a>
+                    </div>
+            </div>
+            <div class="mais-lidas">
+
+                <h3>Mais Lidas</h3>
+                <div class="mais-lidas-noticias">
+                    <% for(let i=1; i < postsTop.length; i++) { %>
+                        <div class="mais-lida-noticia-single">
+                            <img src="<%= postsTop[i].imagem %>" />
+                            <div class="texto-mais-lida-single">
+                                <h4>
+                                    <%= postsTop[i].titulo %>
+                                </h4>
+                                <p>
+                                    <%- postsTop[i].descricaoCurta %>...</br><span
+                                            style="font-size: 12px;font-weight: lighter;"> ( <%= postsTop[i].views %>
+                                                views ) </span>
+                                </p>
+                                <a href="<%= postsTop[i].slug %>">Saiba mais</a>
+                            </div>
+                        </div>
+                        <% } %>
+                            <div class="mais-lida-noticia-single">
+                                <img src="<%= noticia.imagem %>" />
+                                <div class="texto-mais-lida-single">
+                                    <h4>
+                                        Página inicial
+                                    </h4>
+                                    <p>
+                                        <span style="font-size: 12px;font-weight: lighter;"> ( <%= noticia.views %>
+                                                views ) </span>
+                                    </p>
+                                    <a href="/">Home</a>
+                                </div>
+                            </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <%- include('partials/footer.html') %>

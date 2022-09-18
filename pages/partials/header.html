@@ -1,0 +1,68 @@
+<html lang="pt-br">
+
+<head>
+    <title>Portal CodeDreams</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="/public/style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <div class="center">
+            <div class="logo">
+                <h2><a href="/"><span style="font-weight:lighter;">CodeBlog</span><b>News</b></a></h2>
+            </div>
+            <!--logo-->
+            <nav class="desktop">
+                <ul>
+                    <li><a href="/pages/contato.html">Contato</a></li>
+                    <li><a href="/pages/servicos.html">Serviços</a></li>
+                    <li><a href="/pages/sobre.html">Sobre</a></li>
+                    <li><a href="/">Home</a></li>
+                </ul>
+            </nav>
+            <!--desktop-->
+            <nav class="mobile">
+                <h3><i class="fa fa-bars"></i></h3>
+            </nav>
+            <!--mobile-->
+            <div class="clear"></div>
+            <div class="form-busca">
+                <form class="form-busca-form" action="/">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input class="busca" name="busca" type="text" placeholder="Busca..." />
+                </form>
+            </div>
+            <!--formbusca-->
+        </div>
+        <!--center-->
+    </header>
+    <div class="clear"></div>
+    <div>
+        <ul class="total-menu-mobile">
+            <li><a href="/">Home</a></li>
+            <li><a href="/pages/sobre.html">Sobre</a></li>
+            <li><a href="/pages/servicos.html">Serviços</a></li>
+            <li><a href="/pages/contato.html">Contato</a></li>
+        </ul>
+    </div>
+
+
+    <script>
+        var btn = document.querySelector('nav.mobile');
+        var nav = document.querySelector('.total-menu-mobile');
+        btn.addEventListener('click', function () {
+            if (nav.style.display == 'block') {
+                nav.style.display = 'none';
+            } else {
+                nav.style.display = 'block';
+            }
+        });
+    </script>
+
+</body>
+
+</html>

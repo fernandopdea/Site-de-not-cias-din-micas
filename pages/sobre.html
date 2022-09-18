@@ -1,0 +1,75 @@
+<%- include('partials/header.html') %>
+
+  <section class="noticia-destaque">
+    <div class="center">
+      <div class="img-destaque">
+        <div class="overlay-destaque"></div>
+        <div class="title-destaque-descricao">
+          <!--feito em off o link aqui e adicionado nos estilos-->
+          <a href="">
+            <h2>
+              <%= sobre[0].titulo %>
+            </h2>
+          </a>
+          <p>
+            <%= sobre[0].descricaoCurta %>...
+          </p>
+        </div>
+        <img src="<%= sobre[0].imagem %>" />
+      </div>
+    </div>
+  </section><!-- noticia-destaque -->
+  <h2 class="autor-sobre">
+    <p style="font-size: 15px;">Autor: <%= sobre[0].autor %>
+    </p>
+  </h2>
+  <section class="section-sobre">
+    <div class="texto-sobre">
+      <img src="<%= sobre[0].imagem2 %>" alt="" width="200" height="200" />
+      <p>
+        <%= sobre[0].conteudo %>
+      </p>
+    </div>
+  </section><!-- section-sobre -->
+  <section class="section-sobre2">
+    <div class="texto-sobre2">
+      <img src="<%= sobre[0].imagem3 %>" alt="" width="200" height="200" />
+      <p>
+        <%= sobre[0].conteudo2 %>
+      </p>
+    </div>
+  </section><!-- section-sobre -->
+  <section class="comentarios-sobre">
+    <div class="alguns-comentarios-sobre">
+      <h1>alguns comentarios sobre nós</h1>
+    </div>
+    <div class="espaco-para-texto-sobre">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero veritatis quos, amet voluptates nobis vitae
+        quis incidunt eos dicta qui! Aperiam, eum? Illum omnis voluptatibus veritatis officiis rerum corporis
+        accusantium, quibusdam iure asperiores temporibus sequi placeat odit ut in esse consequatur laudantium ex
+        molestias autem! Accusamus eligendi odit deleniti porro, reiciendis mollitia quia? Qui labore necessitatibus quo
+        dolor, deserunt, cumque nisi suscipit tenetur repudiandae accusamus laborum optio quis deleniti beatae commodi
+        nesciunt magnam maxime iusto in? Omnis ab, fugiat adipisci, harum enim optio aliquid ducimus, distinctio
+        quibusdam nam a! Soluta ab et fugiat sint! Quo iste minus placeat est non.
+      </p>
+    </div>
+  </section>
+  <section class="comentario-alguem">
+    <div class="imagem-alguem">
+      <img src="<%= sobre[0].imagem4 %>" alt="">
+    </div>
+    <div class="clear"></div>
+    <div class="comentario-imagem-alguem">
+      <h1>Alguem</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero veritatis quos, amet voluptates nobis vitae
+        quis incidunt eos dicta qui! Aperiam, eum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
+        veritatis quos, amet voluptates nobis vitae.
+      </p>
+    </div>
+    <div class="clear"></div>
+  </section>
+
+
+  <%- include('partials/footer.html') %>
